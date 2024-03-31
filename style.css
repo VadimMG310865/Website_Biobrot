@@ -1,0 +1,1462 @@
+*, 
+*:before, 
+*:after {
+ box-sizing: border-box;
+}
+@keyframes example {
+    0% {background-image: url("img/nem.jpg");}  
+    33% {background-image: url("img/borodino.jpg");}
+    66% {background-image: url("img/bagets.jpg");}
+    100% {background-image: url("img/nem.jpg");} 
+  }
+
+body {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+}
+
+/* блок контейнера media глпавной страницы */
+.bl_cont_media {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 0 / 1;  
+    background-color: black;
+    visibility: hidden;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.text_media {
+    position: absolute;
+    left: 30px;
+    background:black; 
+	width: 10%;
+    height: 5%;
+    color: white;
+    font-size: 25px;
+    /* align-items:flex-start;   */
+    /* justify-items: center;  */
+}
+
+/* блок контейнера лого Биоброт */
+/* .bl_cont_logo_batt {
+    display: flex;
+    flex-direction: column;
+    width: 100%; 
+    height: 400px;
+    justify-content:space-around;
+    background-color:rgb(198, 195, 195);
+
+    border: 3px solid;  
+    border-color: black;  
+} */
+
+/* блок контейнера лого Биоброт */
+.bl_cont_logo {
+    display: flex;
+    width: 100%;
+    justify-content:center;
+    align-items: center;
+    background-color:rgb(198, 195, 195);
+    
+    /* border: 2px solid; 
+    border-color: rgb(33, 33, 202);  */
+}
+
+/* блок лого Биоброт */
+.bl_logo {
+    width: 200px; 
+    height: 90px; 
+    background-image: url("img/Logo2.jpg"); 
+    background-size: 100% 100%;
+
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок контейнера кнопок */
+.bl_cont_batt {  
+    display: flex;
+    width: 100%; 
+    height: 30px;
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 2px solid; 
+    border-color: rgb(242, 13, 13);  */
+
+}
+
+/* кнопки */
+.butt_1, .butt_2, .butt_3{
+    bottom: 0px;
+    background:white; 
+	width: 33%;
+    color: black;
+    font-size: 100%;
+    border: 0px;
+    border-color: white;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;   */
+    /* border-color: black;   */
+}
+
+.butt_1 {text-align:right;}
+
+.butt_3 {text-align:left;}
+
+.butt_4, .butt_5, .butt_6 { 
+    bottom: 0px; 
+    background:grey; 
+	height: 50px;
+	width:100px;
+    color:white;
+    font-size: 0.8pc;
+    border: 0px;
+    border-color: white;
+    border-radius: 30px;
+    margin-top: 50px;
+} 
+
+.butt_5, .butt_6 { 
+   margin-top: 40px;
+} 
+
+/* кнопки получение фокуса*/
+.butt_1:hover, .butt_2:hover, .butt_3:hover{
+    color: rgb(226, 43, 80);
+}
+.butt_4:hover, .butt_5:hover, .butt_6:hover, .butt_7:hover, .butt_add:hover  {
+    background-color:darkslategray; 
+}
+
+/* блок контейнера фото главной  страницы */
+.bl_cont_gl_foto {width: 100%;     
+    
+    /* border: 1px solid;  */
+    /* border-color: black; */}
+
+/* блок фото главной страницы */
+.bl_gl_foto {
+    width: 100%;
+    aspect-ratio: 2.6 / 1; 
+    background-size: 100% 100%; 
+    animation-name: example;
+    animation-duration: 12s;
+    animation-iteration-count:infinite;
+    animation-timing-function: steps(1, end);
+
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок контейнера раздела "о нас" главной  страницы */
+.bl_cont_gl_razd_onas {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    aspect-ratio: 2 / 1; 
+    justify-content:center; 
+    align-items: center;
+    background-color: rgb(177, 173, 173);
+    
+    /* border: 1px solid;  */
+    /* border-color: black; */
+
+}
+
+/* блок заголовка главной  страницы о нас */
+.bl_gl_head_onas {
+    color:black;
+    font-size: 5vw;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    aspect-ratio: 15 / 1;
+    text-align:center;
+    justify-content:center; 
+    
+    /* border: 1px solid;  */
+    /* border-color: black;     */
+}
+
+/* блок текста 1 2 главной  страницы о нас */
+.bl_gl_text_onas1 {
+    display: flex;
+    flex-direction:column;
+    color:black;
+    font-size: 3vw;
+    width: 95%;
+    aspect-ratio: 7 / 1;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    justify-content: center;
+        
+    /* border: 1px solid;  */
+    /* border-color: black;   */
+}
+
+.bl_gl_text_onas2 {
+    display: flex;
+    flex-direction:column;
+    width: 95%;
+    aspect-ratio: 10 / 1;
+    font-size: 2.5vw;
+    font-family:Arial, Helvetica, sans-serif;
+    color:black;
+    text-align:center;
+    justify-content: center;
+    
+    /* border: 1px solid;  */
+    /* border-color: black;   */
+}
+
+/* блок контейнера раздела "наш хлеб" главной страницы  */
+.bl_cont_gl_razdel_nash_hleb  {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    aspect-ratio: 1.7 / 1; 
+    justify-content:center;
+    align-items: center;
+    background-color:rgb(177, 173, 173);
+
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+.bl_gl_foto_nash_hleb {
+    width: 100%;
+    aspect-ratio: 2.5 / 1; 
+    background-image: url("img/nash_hleb.jpg");
+    background-size: 100% 100%;
+}
+
+/* блок контейнера раздела "контакты" главной страницы  */
+.bl_cont_gl_razdel_cont {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    aspect-ratio: 2.5 / 1; 
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(177, 173, 173);
+
+    border: 1px solid;  
+    border-color: black; 
+}
+
+/* блок заголовка главной  страницы "контакты" */
+.bl_gl_head_cont {
+    color:black;
+    font-size: 4vw;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    aspect-ratio: 10 / 1;
+    text-align:center;
+    justify-content:center; 
+    
+    /* border: 1px solid;  */
+    /* border-color: black;   */
+}
+
+/* блок текста главной  страницы раздела "контакты" */
+.bl_gl_text_cont {
+    color:black;
+    font-size: 4vw;
+    font-family:Arial, Helvetica, sans-serif;
+    width: 100%;
+    aspect-ratio: 10 / 1;
+    text-align:center;
+    justify-content:center; 
+    
+    /* border: 1px solid;  */
+    /* border-color: black;  */
+}
+
+/* блок контейнера кнопок соцсетей раздела "контакты" главной  страницы */
+.bl_cont_gl_bat_ss_cont {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 8 / 1;
+    align-items:center;
+    justify-content:space-evenly;
+    background-color:black;
+}
+
+/* блок кнопок соцсетей раздела "контакты" главной  страницы */ 
+/* кнопка YouTube кнопка Facebook кнопка Instagram кнопка Up */
+.butt_yt, .butt_fb, .butt_inst, .butt_up {
+    bottom: 0px; 
+    background:black; 
+	height: 30px;
+	width:80px;
+    color:white;
+    font-size: 0.8pc;
+    border: 1px solid;
+    border-radius: 30px;
+    border-color: white;
+    margin-bottom: 12px;
+}
+
+.butt_yt:hover, .butt_fb:hover, .butt_inst:hover, .butt_up:hover,.butt_bb:hover {
+    color: rgb(226, 43, 80);
+    border-color:  rgb(226, 43, 80); 
+}
+
+/* =============================================================================================== */
+/* ========================================= раздел о нас ======================================== */
+/* =============================================================================================== */
+
+/* блок контейнер фото1 раздела "о нас" */
+.bl_cont_foto1_onas {
+    width: 100%;     
+    border: 1px solid; 
+    border-color: black;
+}
+
+/* блок фото_1 раздела "о нас" */
+.bl_foto1_onas {
+    width: 100%;
+    aspect-ratio: 4.5 / 1; 
+    background-image: url("img/onas.jpg");
+    background-size: 100% 100%; 
+
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок контейнер текста раздела "о нас" */
+.bl_cont_text_onas {
+    display: flex; 
+    width: 100%;
+    aspect-ratio: 2.7 / 1; 
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+    
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок текст раздела "о нас" */
+.bl_text_onas {
+    color:black;
+    font-size: 2vw;
+    width: 90%;
+    height: 90%;
+    aspect-ratio: 4 / 1;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+ 
+/* блок контейнер видео раздела "о нас" */
+.bl_cont_video_onas {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4.5 / 1; 
+    align-items: center; 
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;    */
+    /* border-color: black;  */
+}
+
+.bl_otstup_onas {
+    width: 100%;
+    aspect-ratio: 15 / 1; 
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;    */
+    /* border-color: black;  */
+}
+
+/* блок контейнер фото_2 раздела "о нас" */
+.bl_cont_foto2_onas {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4.5 / 1; 
+    align-items:center; 
+    justify-content:space-around;
+    background-color:rgb(198, 195, 195);
+    
+    /* border: 1px solid;   */
+    /* border-color: black; */
+}
+
+/* блок контейнер фото_21, 22, 23 раздела "о нас" */
+.bl_cont_foto21_onas, .bl_cont_foto22_onas, .bl_cont_foto23_onas {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 1 / 1; 
+    align-items:center; 
+
+    /* border: 1px solid;    */
+    /* border-color: black;  */
+
+}
+
+/* блок фото_21 (Алекс) фото_22 (Шурик) фото_23 (Алена) раздела "о нас" */
+.bl_foto21_onas, .bl_foto22_onas, .bl_foto23_onas  {
+    width: 80%;
+    aspect-ratio: 1 / 1; 
+    background-image: url("img/aleks.jpg");
+    background-size: 100% 100%;
+}
+/* блок фото_22 (Шурик) раздела "о нас" */
+.bl_foto22_onas {
+    background-image: url("img/shurik.jpg");
+}
+
+/* блок фото_23 (Алена) раздела "о нас" */
+.bl_foto23_onas {
+    background-image: url("img/alena.jpg");
+}
+
+/* блок контейнер подписи ФИО фото_2 раздела "о нас" */
+.bl_cont_text1_foto2_onas {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 13 / 1; 
+    align-items: center;
+    /* justify-content:space-around;  */
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+    
+    /* border: 1px solid;    */
+    /* border-color: black;  */
+
+}
+
+/* блок подписи ФИО фото_21 раздела "о нас" */
+.bl_text1_foto21_onas, .bl_text1_foto22_onas, .bl_text1_foto23_onas {
+    font-size: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* блок контейнер подписи  должность фото_2 раздела "о нас" */
+.bl_cont_text2_foto2_onas {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 19 / 1; 
+    align-items: center;
+    /* justify-content:space-between; */
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;   */
+    /* border-color: black; */
+}
+.bl_cont1_text2_foto2_onas {
+    display: flex;
+    width: 33%;
+    aspect-ratio: 19 / 1; 
+    align-items: center;
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;   */
+    /* border-color: black; */
+}
+
+/* блок подписи дожность фото_21_22_23 раздела "о нас" */
+.bl_text2_foto21_onas, .bl_text2_foto22_onas, .bl_text2_foto23_onas {
+    font-size: 2vw; 
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+/* блок контейнер текста1 раздела "о нас" */
+.bl_cont_text1_onas {
+    display: flex;
+    background-color:rgb(189, 182, 168);
+    width: 100%;
+    aspect-ratio: 5 / 1; 
+    align-items: center;
+    justify-content:center;
+}
+
+/* блок текст1 раздела "о нас" */
+.bl_onas_text1 {
+    color:black;
+    font-size: 2vw;
+    width: 55%;
+    height: 90%;
+    aspect-ratio: 4 / 1;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+}
+
+/* блок контейнер mail раздела "о нас" */
+.bl_cont_mail_onas {
+    display: flex;
+    flex-direction:column; 
+    background-color:rgb(198, 195, 195);
+    width: 100%;
+    aspect-ratio: 5 / 1; 
+    align-items:center;
+    justify-content:center;
+    
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок параметров input mail раздела "о нас" */
+.email, .name, .telefon, .comment {
+    width: 33%;
+    aspect-ratio: 5 / 1;
+}
+
+/* блок контейнер кнопки input mail раздела "о нас" */
+.bl_cont_butt_add {
+    display: flex;
+    background-color:rgb(198, 195, 195);
+    width: 100%;
+    aspect-ratio: 5 / 1; 
+    align-items:center;
+    justify-content:center;
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок кнопки input mail раздела "о нас" */
+.butt_add {
+    bottom: 0px; 
+    background:grey; 
+	height: 50px;
+	width:100px;
+    color:white;
+    font-size: 0.8pc;
+    border: 0px;
+    border-color: white;
+    border-radius: 30px;
+    margin-top: 5px; 
+}
+
+/* =============================================================================================== */
+/* ========================================= наш хлеб ============================================ */
+/* =============================================================================================== */
+
+/* блок контейнер раздела "наш хлеб" */
+.bl_cont_foto_khleb {
+    width: 100%;     
+
+    /* border: 1px solid;  */
+    /* border-color: black; */
+}
+
+/* блок фото_1 раздела "наш хлеб" */
+.bl_foto1_khleb {
+    width: 100%;
+    aspect-ratio: 4 / 1; 
+    background-image: url("img/khleb.jpg");
+    background-size: 100% 100%; 
+
+}
+
+/* блок контейнер заголовка текста раздела "наш хлеб" */
+.bl_cont_text1_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 15 / 1; 
+    align-items: center; 
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+}
+
+
+/* блок контейнер текста2 раздела "наш хлеб" */
+.bl_cont_text2_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4.5 / 1;
+    align-items: center; 
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+}
+
+.bl_cont_text5_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 4.5 / 1;
+    align-items: center; 
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+}
+
+
+.bl_cont_text6_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 8 / 1;
+    align-items: center; 
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+}
+/* блок текста2 раздела "наш хлеб" */
+.bl_text2_khleb { 
+    width: 90%;
+    height: 90%;
+    color:black;
+    background-color:rgb(198, 195, 195);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+    justify-content: center;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+} 
+ 
+/* блок контейнер текста3 раздела "наш хлеб" */
+.bl_cont_text3_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 5 / 1;
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+    width: 100%;
+
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+}
+
+/* блок текста3 раздела "наш хлеб" */
+.bl_text3_khleb { 
+    width: 95%;
+    height: 90%;
+    color:black;
+    background-color:rgb(198, 195, 195);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+} 
+ 
+
+/* блок контейнер текста4 раздела "наш хлеб" */
+.bl_cont_text4_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 5 / 1;
+    align-items: center; 
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+}
+
+/* блок текста4 раздела "наш хлеб" */
+.bl_text4_khleb { 
+    width: 95%;
+    height: 90%;
+    color:black;
+    background-color:rgb(198, 195, 195);
+    font-family:Arial, Helvetica, sans-serif;
+    text-align:center;
+
+    /* border: 1px solid;   */
+    /* border-color: black;  */
+} 
+
+/* блок контейнер текста раздела "выпечка""наш хлеб" */
+.bl_cont_text11_khleb {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    aspect-ratio: 10 / 1; 
+    align-items: center; 
+    justify-content:center; 
+    background-color:rgb(198, 195, 195);
+    color:black;
+    font-size: 2.5vw;
+    font-family:Arial, Helvetica, sans-serif;
+
+    /* border: 1px solid;    */
+    /* border-color: black;  */
+}
+
+/*============================ блок ассортимента  "наш хлеб" ==========================*/
+/*================ блок контейнер 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" ==============*/
+
+.bl_cont_row1_khleb, .bl_cont_row2_khleb, .bl_cont_row3_khleb, 
+.bl_cont_row4_khleb, .bl_cont_row5_khleb, .bl_cont_row6_khleb,
+.bl_cont_row7_khleb, .bl_cont_row8_khleb
+{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1.95 / 1;
+    align-items:first baseline;
+    justify-content:space-around; 
+    background-color:rgb(198, 195, 195);
+
+     /* border: 1px solid;  
+     border-color: black;   */
+}
+
+bl_cont_row6_khleb,.bl_cont_row7_khleb, .bl_cont_row8_khleb
+{ aspect-ratio: 2.5 / 1;}
+
+
+
+.bl_cont_row1_col1_khleb, .bl_cont_row1_col2_khleb, .bl_cont_row1_col3_khleb,
+.bl_cont_row2_col1_khleb, .bl_cont_row2_col2_khleb, .bl_cont_row2_col3_khleb,
+.bl_cont_row3_col1_khleb, .bl_cont_row3_col2_khleb, .bl_cont_row3_col3_khleb,
+.bl_cont_row4_col1_khleb, .bl_cont_row4_col2_khleb, .bl_cont_row4_col3_khleb,
+.bl_cont_row5_col1_khleb, .bl_cont_row5_col2_khleb,
+.bl_cont_row6_col1_khleb, .bl_cont_row6_col2_khleb, .bl_cont_row6_col3_khleb,
+.bl_cont_row7_col1_khleb, .bl_cont_row7_col2_khleb, .bl_cont_row7_col3_khleb,
+.bl_cont_row8_col1_khleb, .bl_cont_row8_col2_khleb
+{
+    display: flex;
+    flex-direction:column; 
+    width: 33%;
+    aspect-ratio: 1.3 / 1;
+    justify-content:baseline;
+    align-items:center;
+    background-color:rgb(198, 195, 195);
+
+     /* border: 1px solid;  
+     border-color: rgb(228, 13, 13);   */
+}
+
+/* блок контейнер фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_cont_foto1_khleb, .bl_cont_foto2_khleb, .bl_cont_foto3_khleb,
+.bl_cont_foto4_khleb, .bl_cont_foto5_khleb, .bl_cont_foto6_khleb,
+.bl_cont_foto7_khleb, .bl_cont_foto8_khleb
+{
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1.7 / 1;
+    align-items:center;
+    justify-content:space-around;
+    background-color:rgb(198, 195, 195);
+
+     /* border: 1px solid;   
+     border-color: black;  */
+}
+
+/* блок фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_foto11_khleb, .bl_foto12_khleb, .bl_foto13_khleb,
+.bl_foto21_khleb, .bl_foto22_khleb, .bl_foto23_khleb,
+.bl_foto31_khleb, .bl_foto32_khleb, .bl_foto33_khleb,
+.bl_foto41_khleb, .bl_foto42_khleb, .bl_foto43_khleb,
+.bl_foto51_khleb, .bl_foto52_khleb,
+.bl_foto61_khleb, .bl_foto62_khleb, .bl_foto63_khleb,
+.bl_foto71_khleb, .bl_foto72_khleb, .bl_foto73_khleb,
+.bl_foto81_khleb, .bl_foto82_khleb
+
+{
+    width: 70%;
+    height: 90%;
+    background-size: 100% 100%;
+}
+
+.bl_foto11_khleb { background-image: url("img/nemetc.jpg");}
+.bl_foto12_khleb { background-image: url("img/dereven.jpg");}
+.bl_foto13_khleb { background-image: url("img/kolobok.jpg");}
+.bl_foto21_khleb { background-image: url("img/shveits.jpg");}
+.bl_foto22_khleb { background-image: url("img/borodin.jpg");}
+.bl_foto23_khleb { background-image: url("img/polba.jpg");}
+.bl_foto31_khleb { background-image: url("img/tikva.jpg");}
+.bl_foto32_khleb { background-image: url("img/rozh.jpg");}
+.bl_foto33_khleb { background-image: url("img/chiabata.jpg");}
+.bl_foto41_khleb { background-image: url("img/pshenichn.jpg");}
+.bl_foto42_khleb { background-image: url("img/baton.jpg");}
+.bl_foto43_khleb { background-image: url("img/olivka.jpg");}
+.bl_foto51_khleb { background-image: url("img/zlaki.jpg");}
+.bl_foto52_khleb { background-image: url("img/korn.jpg");}
+.bl_foto61_khleb { background-image: url("img/bulburg.jpg");}
+.bl_foto62_khleb { background-image: url("img/bretcel.jpg");}
+.bl_foto63_khleb { background-image: url("img/briosh.jpg");}
+.bl_foto71_khleb { background-image: url("img/bulkor.jpg");}
+.bl_foto72_khleb { background-image: url("img/bultvor.jpg");}
+.bl_foto73_khleb { background-image: url("img/bulmak.jpg");}
+.bl_foto81_khleb { background-image: url("img/kosichka.jpg");}
+.bl_foto82_khleb { background-image: url("img/granola.jpg");}
+
+/* блок названия фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_text1_foto11_khleb, .bl_text1_foto12_khleb, .bl_text1_foto13_khleb,
+.bl_text1_foto21_khleb, .bl_text1_foto22_khleb, .bl_text1_foto23_khleb,
+.bl_text1_foto31_khleb, .bl_text1_foto32_khleb, .bl_text1_foto33_khleb,
+.bl_text1_foto41_khleb, .bl_text1_foto42_khleb, .bl_text1_foto43_khleb,
+.bl_text1_foto51_khleb, .bl_text1_foto52_khleb,
+.bl_text1_foto61_khleb, .bl_text1_foto62_khleb, .bl_text1_foto63_khleb,
+.bl_text1_foto71_khleb, .bl_text1_foto72_khleb, .bl_text1_foto73_khleb,
+.bl_text1_foto81_khleb, .bl_text1_foto82_khleb 
+{
+    height: 13%;
+    font-size: 2vw;
+    font-family:Arial, Helvetica, sans-serif;
+    justify-content:last baseline;
+
+    /* border: 2px solid;    
+    border-color: black;  */
+}
+
+/* блок описания фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_text2_foto11_khleb, .bl_text2_foto12_khleb, .bl_text2_foto13_khleb, 
+.bl_text2_foto21_khleb, .bl_text2_foto22_khleb, .bl_text2_foto23_khleb,
+.bl_text2_foto31_khleb, .bl_text2_foto32_khleb, .bl_text2_foto33_khleb,
+.bl_text2_foto41_khleb, .bl_text2_foto42_khleb, .bl_text2_foto43_khleb
+{
+    font-size: 1.5vw;
+    width: 90%;
+    height: 88%;
+    font-family:Arial, Helvetica, sans-serif;
+    align-items:start;
+
+    /* border: 2px solid;    
+    border-color: black;  */
+}
+
+.bl_text2_foto51_khleb, .bl_text2_foto52_khleb
+
+{
+    font-size: 1.5vw;
+    width: 90%;
+    height: 53%;
+    font-family:Arial, Helvetica, sans-serif;
+    align-items:start;
+
+    /* border: 2px solid;    
+    border-color: black;  */
+}
+
+.bl_text2_foto61_khleb, .bl_text2_foto62_khleb, .bl_text2_foto63_khleb,
+.bl_text2_foto71_khleb, .bl_text2_foto72_khleb, .bl_text2_foto73_khleb,
+.bl_text2_foto81_khleb, .bl_text2_foto82_khleb
+{
+    font-size: 1.5vw;
+    width: 90%;
+    height: 45%;
+    font-family:Arial, Helvetica, sans-serif;
+    align-items:start;
+
+    /* border: 2px solid;    
+    border-color: black;  */
+}
+
+
+
+
+/* блок рецептуры фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_text3_foto11_khleb, .bl_text3_foto12_khleb, .bl_text3_foto13_khleb,
+.bl_text3_foto21_khleb, .bl_text3_foto22_khleb, .bl_text3_foto23_khleb,
+.bl_text3_foto31_khleb, .bl_text3_foto32_khleb, .bl_text3_foto33_khleb,
+.bl_text3_foto41_khleb, .bl_text3_foto42_khleb, .bl_text3_foto43_khleb,
+.bl_text3_foto51_khleb, .bl_text3_foto52_khleb,
+.bl_text3_foto61_khleb, .bl_text3_foto62_khleb, .bl_text3_foto63_khleb,
+.bl_text3_foto71_khleb, .bl_text3_foto72_khleb, .bl_text3_foto73_khleb,
+.bl_text3_foto81_khleb, .bl_text3_foto82_khleb
+{
+    font-size: 1.3vw;
+    width: 90%;
+    height: 30%;
+    font-family:Arial, Helvetica, sans-serif;
+    align-items:end;
+
+    /* border: 2px solid;    
+    border-color: black;  */
+}
+
+
+
+/* блок контейнер таблицы раздела "наш хлеб" */
+.bl_cont_table_khleb {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    align-items:center;
+    justify-content:space-around;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;   */
+    /* border-color: black; */
+}
+
+/* блок таблицы раздела "наш хлеб" */
+.bl_table_khleb {
+    width: 90%;
+    height:90%;
+    background-image: url("img/tabl.png");
+    background-size: 100% 100%;
+}
+/* ========================================= контакты ======================================== */
+
+/* блок контейнер раздела "контакты" */
+.bl_cont_foto1_contacts {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    aspect-ratio: 4 / 1; 
+    align-items:center;
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+    /* border: 1px solid;  */
+    /* border-color: black;  */
+}
+
+/* блок фото_1 раздела "контакты" */
+.bl_foto1_contacts {
+    width: 100%;
+    aspect-ratio: 4 / 1; 
+    align-items: center;
+    justify-content:center;
+    background-image: url("img/cont.jpeg");
+    background-size: 100% 100%;
+}
+
+/* блок контейнер адреса и карты раздела "контакты" */
+.bl_cont_adr_map_contacts {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 2 / 1; 
+    align-items:center;
+    justify-content:space-around;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;  */
+    /* border-color: black;  */
+}
+ 
+/* блок контейнер адреса раздела "контакты" */
+.bl_cont_adr_contacts {
+    background-color:rgb(198, 195, 195);
+    width: 17%;
+    aspect-ratio: 0.37 / 1; 
+    text-align:center; 
+    justify-content: center;
+
+    /* border: 1px solid; */
+    /* border-color: black;  */
+}
+/* блок контейнер карты раздела "контакты" */
+.bl_cont_map_contacts {
+    background-color:rgb(198, 195, 195);
+    width: 55%;
+    aspect-ratio: 1.2 / 1; 
+
+    /* border: 2px solid;  */
+    /* border-color: black;  */
+}
+
+/* блок текста адреса раздела "контакты" */
+.bl_adr_contacts {
+    color:black;
+    font-size: 2.1vw;
+    width: 70%;
+    height: 100%;
+    aspect-ratio: 4 / 1;
+    font-family:Arial, Helvetica, sans-serif;
+    /* text-align:center; */
+    /* justify-content: center; */
+
+}
+/* блок контейнер кнопки раздела "контакты" */
+.bl_cont_butt_contacts {
+    display: flex;
+    background-color:rgb(198, 195, 195);
+    width: 100%;
+    aspect-ratio: 10 / 1; 
+    align-items:center;
+    justify-content:center;
+    /* border: 1px solid; */
+    /* border-color: black; */
+}
+
+.butt_7 { 
+    bottom: 0px; 
+    background:grey; 
+	height: 50px;
+	width:200px;
+    color:white;
+    font-size: 0.8pc;
+    border: 0px;
+    border-color: white;
+    border-radius: 30px;
+
+} 
+/* ========================================= маршрут ======================================== */
+
+/* блок контейнер схемы проезда раздела "маршрут" */
+.bl_cont_foto_marshrut {
+    display: flex;
+    width: 100%;
+    aspect-ratio: 2 / 1; 
+    align-items: center; 
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;  */
+    /* border-color: black;  */
+}
+
+/* блок схемы проезда раздела "маршрут" */
+.bl_foto_marshrut {
+    width: 55%;
+    aspect-ratio: 1.2 / 1; 
+    background-image: url("img/skhema_pr.jpg");
+    background-size: 100% 100%;
+    border: 2px solid; 
+    border-color: black; 
+}
+
+/* блок контейнер текста раздела "маршрут" */
+.bl_cont_text_marshrut {
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    aspect-ratio: 1.3 / 1; 
+    align-items: center;
+    justify-content:center;
+    background-color:rgb(198, 195, 195);
+
+    /* border: 1px solid;  */
+    /* border-color: black;  */
+}
+
+/* блок текст раздела "маршрут" */
+.bl_text_marshrut {
+    color:black;
+    font-size: 3vw;
+    width: 80%;
+    /* height: 100%; */
+    aspect-ratio: 4 / 1;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+/* ========================================================================================= */
+/* ========================================= @media ======================================== */
+/* ========================================================================================= */
+
+@media (max-width: 600px){
+
+@keyframes example {
+    0% {background-image: url("img/1nem.jpg");}  
+    33% {background-image: url("img/1borodino\ .jpg");}
+    66% {background-image: url("img/1bagets.jpg");}
+    100% {background-image: url("img/1nem.jpg");} 
+}
+
+/* блок контейнера media главной страницы */
+.bl_cont_media {
+    display: flex; 
+    aspect-ratio: 5 / 1; 
+    visibility:visible;
+}
+
+.butt_bb_n {
+    width: 31px;
+    height: 31px;
+    background-image:url("img/kr.jpg");
+}
+.butt_bb_v {
+    width: 30px;
+    height: 30px;
+    background-image:url("img/Polosa.jpg");
+}
+
+.butt_bb_n {visibility: hidden;}
+
+.butt_bb_v, .butt_bb_n {
+    position: absolute;
+    right: 50px;
+    border: 0px;
+    border-color: black;
+}
+
+/* блок контейнера лого и блок лого главной  страницы */
+.bl_cont_logo {height: 0px;}
+
+.bl_cont_batt { 
+    flex-direction: column;
+    justify-content:end;
+}
+
+.bl_logo, .bl_cont_batt {   
+    height: 0px; 
+    visibility: hidden; 
+}
+
+/* кнопки */
+.butt_1, .butt_2, .butt_3{
+	width: 100%;
+    height: 33%;
+    /* border: 1px solid;   
+    border-color: black;    */
+}
+
+.butt_1, .butt_3  {text-align:center;}
+  
+/* блок контейнера фото главной  страницы */
+.bl_cont_gl_foto {width: 100%;}
+
+/* блок фото главной страницы */
+.bl_gl_foto { aspect-ratio: 1.04 / 1;}  
+
+.butt_1, .butt_2, .butt_3 { font-size: 70%;}
+.butt_4, .butt_5, .butt_6, .butt_add { 
+        margin-top: 10px;
+        height: 30px;
+        width:70px;
+        font-size: 0.6pc;
+        border-radius: 20px;
+} 
+
+.butt_yt, .butt_fb, .butt_inst, .butt_up {
+        height: 20px;
+        width:60px;
+        font-size: 0.6pc;
+        border-radius: 20px;
+}
+
+.butt_7{ 
+        height: 30px;
+        width:90px;
+        font-size: 0.7pc;
+        border-radius: 30px;
+} 
+
+/* блок контейнера раздела "о нас" главной  страницы */
+.bl_cont_gl_razd_onas {aspect-ratio: 0.8 / 1;}
+
+/* блок заголовка главной  страницы о нас */
+.bl_gl_head_onas {
+    font-size: 8vw;
+    height: 13%;
+}
+
+/* блок текста 1 2 главной  страницы о нас */
+.bl_gl_text_onas1 {
+    font-size: 6vw;
+    width: 85%;
+    height: 50%;
+}
+
+.bl_gl_text_onas2 {
+    width: 85%;
+    height: 23%;
+    font-size: 4.5vw;
+}
+
+/* блок контейнера раздела "наш хлеб" главной страницы  */
+.bl_cont_gl_razdel_nash_hleb  {
+    aspect-ratio: 0.88 / 1;  
+
+}
+
+.bl_gl_foto_nash_hleb {
+    width: 100%;
+    height: 90%;
+    aspect-ratio: 0.8 / 1; 
+    background-image: url("img/1nash_hleb.jpg");
+    background-size: 100% 100%;
+}
+
+
+/* блок контейнера раздела "контакты" главной страницы  */
+.bl_cont_gl_razdel_cont { aspect-ratio: 1.5 / 1; }
+
+/* блок заголовка главной  страницы "контакты" */
+.bl_gl_head_cont {
+    font-size: 8vw;
+    height:40%;
+}
+
+/* блок текста главной  страницы раздела "контакты" */
+.bl_gl_text_cont {
+    font-size: 6vw;
+    height:30%;
+}
+
+/* блок контейнера кнопок соцсетей раздела "контакты" главной  страницы */
+.bl_cont_gl_bat_ss_cont {aspect-ratio: 4 / 1;}
+
+/* =========================================================================*/
+/* ============ раздел "о нас" =============================================*/
+/* =========================================================================*/
+
+/* блок контейнер текста раздела "о нас" */
+.bl_cont_text_onas {aspect-ratio: 0.55 / 1;}
+
+/* блок текст раздела "о нас" */
+.bl_text_onas {
+    font-size: 4.5vw;
+    aspect-ratio: 4 / 1;
+}
+
+/* блок контейнер текста1 раздела "о нас" */
+.bl_cont_text1_onas { aspect-ratio: 1.1 / 1;}
+
+/* блок текст1 раздела "о нас" */
+.bl_onas_text1 {
+    font-size: 5vw;
+    width: 80%;
+}
+
+.bl_cont_foto2_onas { flex-direction: column;}
+
+/* блок подписи ФИО фото_21 раздела "о нас" */
+.bl_text1_foto21_onas, .bl_text1_foto22_onas, .bl_text1_foto23_onas {
+    font-size: 6vw;
+}
+
+/* блок фото_21 (Алекс) фото_22 (Шурик) фото_23 (Алена) раздела "о нас" */
+.bl_foto21_onas, .bl_foto22_onas, .bl_foto23_onas  {
+    width: 70%;
+    /* background-size: 80% 80%; */
+}
+
+/* блок подписи дожность фото_21_22_23 раздела "о нас" */
+.bl_text2_foto21_onas, .bl_text2_foto22_onas, .bl_text2_foto23_onas {
+    font-size: 4vw; 
+}
+
+/* =========================================================================*/
+/* =============================== контакты =============================== */
+/* =========================================================================*/
+
+/* блок контейнер адреса и карты раздела "контакты" */
+.bl_cont_adr_map_contacts { flex-direction:column;}
+
+/* блок контейнер адреса раздела "контакты" */
+.bl_cont_adr_contacts {
+    width: 45%;
+    aspect-ratio: 0.55 / 1; 
+
+    /* border: 1px solid; */
+    /* border-color: black;   */
+}
+
+.bl_adr_contacts {
+    color:black;
+    font-size: 5vw;
+    width: 100%;
+    height: 100%;
+
+    /* text-align:center;  */
+    /* justify-content: center;  */
+
+}
+
+/* блок контейнер карты раздела "контакты" */
+.bl_cont_map_contacts {
+    width: 90%;
+    aspect-ratio: 1 / 1; 
+
+    /* border: 2px solid; 
+    border-color: black;  */
+}
+
+/* =========================================================================*/
+/* ============================== маршрут ================================= */
+/* =========================================================================*/
+
+/* блок контейнер схемы проезда раздела "маршрут" */
+.bl_cont_foto_marshrut { aspect-ratio: 1 / 1;}
+
+/* блок схемы проезда раздела "маршрут" */
+.bl_foto_marshrut {
+    width: 90%;
+    aspect-ratio: 1.2 / 1; 
+}
+
+/* блок контейнер текста раздела "маршрут" */
+.bl_cont_text_marshrut { 
+    aspect-ratio: 0.5 / 1; 
+    text-align:center; 
+}
+
+/* блок текст раздела "маршрут" */
+.bl_text_marshrut {
+    font-size: 5vw;
+    width: 80%;
+}
+
+/* =========================================================================*/
+/* ============================== наш хлеб ================================ */
+/* =========================================================================*/
+
+/* блок контейнер заголовка текста раздела "наш хлеб" */
+.bl_cont_text1_khleb { font-size: 6vw;}
+
+/* блок контейнер текста2 раздела "наш хлеб" */
+.bl_cont_text2_khleb {
+    aspect-ratio: 1.7 / 1;
+    font-size: 5vw;
+}
+
+.bl_cont_text5_khleb {
+    aspect-ratio: 1 / 1;
+    font-size: 5.5vw;
+}
+
+.bl_cont_text6_khleb {
+    aspect-ratio: 3 / 1;
+    font-size: 6vw;
+}
+
+/* блок контейнер текста3 раздела "наш хлеб" */
+.bl_cont_text3_khleb {
+    aspect-ratio: 1.5 / 1;
+    font-size: 5vw;
+}
+
+/* блок контейнер текста4 раздела "наш хлеб" */
+.bl_cont_text4_khleb {
+    aspect-ratio: 2 / 1;
+    font-size: 4vw;
+}
+
+/* блок контейнер текста раздела "выпечка""наш хлеб" */
+.bl_cont_text11_khleb {
+    aspect-ratio: 5 / 1; 
+    font-size: 5vw;
+}
+
+
+.bl_cont_row1_khleb, .bl_cont_row2_khleb, .bl_cont_row3_khleb, 
+.bl_cont_row4_khleb, .bl_cont_row5_khleb, .bl_cont_row6_khleb,
+.bl_cont_row7_khleb, .bl_cont_row8_khleb
+{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+
+    /* border: 1px solid;  
+    border-color: black;   */
+}
+
+.bl_cont_row1_col1_khleb, .bl_cont_row1_col2_khleb, .bl_cont_row1_col3_khleb,
+.bl_cont_row2_col1_khleb, .bl_cont_row2_col2_khleb, .bl_cont_row2_col3_khleb,
+.bl_cont_row3_col1_khleb, .bl_cont_row3_col2_khleb, .bl_cont_row3_col3_khleb,
+.bl_cont_row4_col1_khleb, .bl_cont_row4_col2_khleb, .bl_cont_row4_col3_khleb,
+.bl_cont_row5_col1_khleb, .bl_cont_row5_col2_khleb,
+.bl_cont_row6_col1_khleb, .bl_cont_row6_col2_khleb, .bl_cont_row6_col3_khleb,
+.bl_cont_row7_col1_khleb, .bl_cont_row7_col2_khleb, .bl_cont_row7_col3_khleb,
+.bl_cont_row8_col1_khleb, .bl_cont_row8_col2_khleb
+{
+    width: 100%;
+    aspect-ratio: 1/1;  
+
+}
+
+/* блок контейнер фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_cont_foto1_khleb, .bl_cont_foto2_khleb, .bl_cont_foto3_khleb,
+.bl_cont_foto4_khleb, .bl_cont_foto5_khleb, .bl_cont_foto6_khleb,
+.bl_cont_foto7_khleb, .bl_cont_foto8_khleb
+{aspect-ratio: 1.1 / 1;
+    /* border: 1px solid;  
+    border-color: black; */
+
+}
+
+/* блок фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_foto11_khleb, .bl_foto12_khleb, .bl_foto13_khleb,
+.bl_foto21_khleb, .bl_foto22_khleb, .bl_foto23_khleb,
+.bl_foto31_khleb, .bl_foto32_khleb, .bl_foto33_khleb,
+.bl_foto41_khleb, .bl_foto42_khleb, .bl_foto43_khleb,
+.bl_foto51_khleb, .bl_foto52_khleb,
+.bl_foto61_khleb, .bl_foto62_khleb, .bl_foto63_khleb,
+.bl_foto71_khleb, .bl_foto72_khleb, .bl_foto73_khleb,
+.bl_foto81_khleb, .bl_foto82_khleb, .bl_foto83_khleb
+{
+    width: 80%;
+    height: 80%;
+}
+
+/* блок названия фото 1 2 3 4 5 ряд раздела "наш хлеб" */
+.bl_text1_foto11_khleb, .bl_text1_foto12_khleb, .bl_text1_foto13_khleb,
+.bl_text1_foto21_khleb, .bl_text1_foto22_khleb, .bl_text1_foto23_khleb,
+.bl_text1_foto31_khleb, .bl_text1_foto32_khleb, .bl_text1_foto33_khleb,
+.bl_text1_foto41_khleb, .bl_text1_foto42_khleb, .bl_text1_foto43_khleb,
+.bl_text1_foto51_khleb, .bl_text1_foto52_khleb,
+.bl_text1_foto61_khleb, .bl_text1_foto62_khleb, .bl_text1_foto63_khleb,
+.bl_text1_foto71_khleb, .bl_text1_foto72_khleb, .bl_text1_foto73_khleb,
+.bl_text1_foto81_khleb, .bl_text1_foto82_khleb 
+{ font-size: 6vw;
+
+  /* border: 1px solid;  
+  border-color: black; */
+}
+
+/* блок описания фото 1 2 3 4 5 6 7 8 ряд раздела "наш хлеб" */
+.bl_text2_foto11_khleb, .bl_text2_foto12_khleb, .bl_text2_foto13_khleb, 
+.bl_text2_foto21_khleb, .bl_text2_foto22_khleb, .bl_text2_foto23_khleb,
+.bl_text2_foto31_khleb, .bl_text2_foto32_khleb, .bl_text2_foto33_khleb,
+.bl_text2_foto41_khleb, .bl_text2_foto42_khleb, .bl_text2_foto43_khleb,
+.bl_text2_foto51_khleb, .bl_text2_foto52_khleb,
+.bl_text2_foto61_khleb, .bl_text2_foto62_khleb, .bl_text2_foto63_khleb,
+.bl_text2_foto71_khleb, .bl_text2_foto72_khleb, .bl_text2_foto73_khleb,
+.bl_text2_foto81_khleb, .bl_text2_foto82_khleb
+{
+    font-size: 4vw;
+    width: 90%;
+    height: 45%;
+    align-items: center;
+
+    /* border: 1px solid;  
+    border-color: black;  */
+}
+
+.bl_text2_foto51_khleb, .bl_text2_foto52_khleb{ height: 25%;}
+
+.bl_text2_foto61_khleb, .bl_text2_foto62_khleb, .bl_text2_foto63_khleb,
+.bl_text2_foto71_khleb, .bl_text2_foto72_khleb, .bl_text2_foto73_khleb,
+.bl_text2_foto81_khleb, .bl_text2_foto82_khleb
+{ height: 22%;}
+
+/* блок рецептуры фото 1 2 3 4 5 ряд раздела "наш хлеб" */
+.bl_text3_foto11_khleb, .bl_text3_foto12_khleb, .bl_text3_foto13_khleb,
+.bl_text3_foto21_khleb, .bl_text3_foto22_khleb, .bl_text3_foto23_khleb,
+.bl_text3_foto31_khleb, .bl_text3_foto32_khleb, .bl_text3_foto33_khleb,
+.bl_text3_foto41_khleb, .bl_text3_foto42_khleb, .bl_text3_foto43_khleb,
+.bl_text3_foto51_khleb, .bl_text3_foto52_khleb,
+.bl_text3_foto61_khleb, .bl_text3_foto62_khleb, .bl_text3_foto63_khleb,
+.bl_text3_foto71_khleb, .bl_text3_foto72_khleb, .bl_text3_foto73_khleb,
+.bl_text3_foto81_khleb, .bl_text3_foto82_khleb
+{
+    font-size: 4vw;
+    width: 90%;
+
+    /* border: 1px solid;  
+    border-color: black;   */
+
+}
+}
+

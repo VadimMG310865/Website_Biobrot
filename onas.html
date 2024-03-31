@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script defer src="./index.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>О нас</title>
+</head> 
+<body>
+<!--  ================ блок медиа главной страницы ================================== -->   
+<div class = "bl_cont_media"> 
+  <div class = "text_media" > <b>BioBrot</b>  </div>
+  <button class = "butt_bb_v" id="vbb" onclick = "vis_logo()"> </button>  
+  <button class = "butt_bb_n" id="nbb" onclick = "nvis_logo()"> </button>  
+</div>  
+
+<!--  =============================================================================== -->     
+      <div class = "bl_cont_logo" id="bclog">
+           <div class = "bl_logo" id="blog"></div> 
+      </div> 
+      <div class = "bl_cont_batt" id="bcbutt">
+            <button class = "butt_1" id="b1"
+              onclick="window.location.href= 'index.html'">
+              <b>ГЛАВНАЯ</b>
+            </button>
+            <button class = "butt_2" id="b2"
+              onclick="window.location.href= 'khleb.html'">
+              <b>ХЛЕБ</b>
+            </button>
+            <button class = "butt_3" id="b3"
+              onclick="window.location.href= 'contacts.html'">
+              <b>КОНТАКТЫ</b>
+            </button>
+      </div>
+        
+        <div class = "bl_cont_foto1_onas">
+            <div class = "bl_foto1_onas"> </div> 
+        </div> 
+        <div class = "bl_cont_text_onas"> 
+           <div class = "bl_text_onas">
+                  Идея создания пекарни <b>BioBrot</b> проста и сложна одновременно. Мы хотели сделать качественный, полезный и вкусный хлеб. Хлеб, который доставляет удовольствие и дарит тёплые эмоции.
+                  Хлеб, который понравится и взрослым, и детям. Хлеб, который попробовав раз, непременно захочется снова. Одержимая этим желанием, команда <b>BioBrot</b> начала свой длинный и непростой путь. Поиск правильного зерна и высококачественных ингредиентов, изучение вкусов и ожиданий потребителя, тщательный выбор традиционных рецептур и их проработка, поиск и обучение российских пекарей для работы с дровяной печью – это малая часть того, что нам пришлось решать в начале, то, что входит в круг наших забот и по сей день.
+                  <b>BioBrot</b> постоянно развивается и совершенствуется, впитывая новые тенденции и проникая вглубь вековых традиций. Каждый новый день – это новый опыт. Каждый хлеб в нашей пекарне – уникален.
+                  Каждая улыбка покупателя – нам особая награда. Хлеб – это наше ремесло, наша философия и наука.
+           </div>  
+        </div>    
+        <div class = "bl_cont_video_onas">
+            <video controls width = "90%"> 
+              <source src="img/video_bb.mp4" >
+            </video> 
+        </div> 
+        <div class = "bl_otstup_onas"> </div>     
+        <div class = "bl_cont_foto2_onas"> 
+          <div class = "bl_cont_foto21_onas">
+            <div class = "bl_foto21_onas"> </div>
+            <div class = "bl_text1_foto21_onas"><b> Александер Курелла </b>  </div>
+            <div class = "bl_text2_foto21_onas"> Основатель </div> 
+          </div>
+          <div class = "bl_cont_foto22_onas">
+            <div class = "bl_foto22_onas"> </div>
+            <div class = "bl_text1_foto22_onas"><b> Александер Онаш </b></div> 
+            <div class = "bl_text2_foto22_onas">Пекарь-мастер </div> 
+          </div>  
+          <div class = "bl_cont_foto23_onas">
+            <div class = "bl_foto23_onas"> </div>
+            <div class = "bl_text1_foto23_onas"><b>Алена Лунина </b></div>
+            <div class = "bl_text2_foto22_onas">Исполнительный директор </div> 
+          </div>  
+        </div> 
+
+        <div class = "bl_cont_text1_onas">  
+           <div class = "bl_onas_text1">
+                <b>ТЫ МОЖЕШЬ СТАТЬ ЧАСТЬЮ НАШЕЙ КОМАНДЫ</b>
+                Наша команда постоянно работает над новым ассортиментом, сезонными
+                новинками и интересными проектами. Мы всегда в поиске новых, «воодушевленных хлебом» членов команды, готовых покорять новые высоты, открывать новые горизонты и задавать тренды в мире хлеба.
+           </div>
+        </div>
+        <div class = "bl_otstup_onas"> </div>
+        <div class="bl_cont_mail_onas">
+            <label for="email"><b>E_mail (обязательное поле)</b></label>
+            <input class="email" id="email" type="email">
+
+            <label for="name"><b>Имя  (обязательное поле)</b></label>
+            <input class="name" id="name" type="text">
+
+            <label for="telefon"><b>Телефон  (обязательное поле)</b></label>
+            <input class="telefon" id="telefon" type="text">
+
+            <label for="comment"><b>Комментарий</b></label>
+            <input class="comment" id="comment" type="text">
+        </div> 
+        <div class="bl_cont_butt_add">
+                  <button class="butt_add">Отправить</button>
+        </div>
+        <div class = "bl_cont_gl_bat_ss_cont"> 
+            <button class = "butt_yt" onclick="location.href= 'https://www.youtube.com/channel/UCzN2FUjsoikuWDeQya5bVdQ?view_as=subscriber'"> YouTube </button>
+            <button class = "butt_fb" onclick="location.href= 'https://www.facebook.com/BioBrot.ru'"> Facebook </button>
+            <button class = "butt_inst" onclick="location.href= 'https://www.instagram.com/biobrot.ru/'"> Instagram </button>
+            <button class = "butt_up"> Up ▲ </button>
+        </div>
+
+</body>
+</html>
